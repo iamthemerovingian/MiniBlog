@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Effortless.Net.Encryption, Version=3.2.0.0, Culture=neutral, PublicKeyToken=603f9a8e5bb15e51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Effortless.Net.Encryption.3.2.0\lib\net40\Effortless.Net.Encryption.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IUserManagementService.cs" />
     <Compile Include="Services\UserManagementService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiniBlog.DataAccess\MiniBlog.DataAccess.csproj">
+      <Project>{71239286-1D7A-491D-8A0C-02FE04E9064A}</Project>
+      <Name>MiniBlog.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiniBlog.GeneralInfrastructure\MiniBlog.GeneralInfrastructure.csproj">
+      <Project>{3227A896-01D5-4C0E-9071-D2CDAD24196A}</Project>
+      <Name>MiniBlog.GeneralInfrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

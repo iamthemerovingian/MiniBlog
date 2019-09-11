@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Effortless.Net.Encryption, Version=3.2.0.0, Culture=neutral, PublicKeyToken=603f9a8e5bb15e51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Effortless.Net.Encryption.3.2.0\lib\net40\Effortless.Net.Encryption.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
     </Reference>
@@ -346,6 +349,14 @@
     <ProjectReference Include="..\MiniBlog.Business\MiniBlog.Business.csproj">
       <Project>{1DF899BF-0436-4A2E-AD1B-7EECABB546DE}</Project>
       <Name>MiniBlog.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiniBlog.DataAccess\MiniBlog.DataAccess.csproj">
+      <Project>{71239286-1D7A-491D-8A0C-02FE04E9064A}</Project>
+      <Name>MiniBlog.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiniBlog.GeneralInfrastructure\MiniBlog.GeneralInfrastructure.csproj">
+      <Project>{3227A896-01D5-4C0E-9071-D2CDAD24196A}</Project>
+      <Name>MiniBlog.GeneralInfrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

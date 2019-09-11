@@ -8,5 +8,6 @@ namespace MiniBlog.DataAccess.Repositories
 {
     public interface IUserRepository
     {
+        bool SaveUserPasswordHashAndSalt(object userName, string userPasswordHash, string salt, string identifier);
     }
 }

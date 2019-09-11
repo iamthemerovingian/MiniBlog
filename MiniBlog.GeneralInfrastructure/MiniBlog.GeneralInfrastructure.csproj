@@ -40,11 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extenstions\StringExtensions.cs" />
     <Compile Include="Models\DomainModels\UserDomainModel.cs" />
+    <Compile Include="Models\RequestModels\RegisterUserRequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\RequestModels\" />
     <Folder Include="Models\ResponseModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,6 +8,7 @@ namespace MiniBlog.App_Start
     using System.Web.Http;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
     using MiniBlog.Business.Services;
+    using MiniBlog.DataAccess.Repositories;
     using Ninject;
     using Ninject.Web.Common;
     using Ninject.Web.Common.WebHost;
@@ -64,6 +65,7 @@ namespace MiniBlog.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IUserManagementService>().To<UserManagementService>();
+            kernel.Bind<IUserRepository>().To<UserRepository>();
         }
     }
 }

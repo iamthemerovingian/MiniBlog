@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiniBlog.GeneralInfrastructure.Models.RequestModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace MiniBlog.Business.Services
 {
     public interface IUserManagementService
     {
-        string RegisterUser();
+        string RegisterUser(RegisterUserRequestModel requestModel);
     }
 }
