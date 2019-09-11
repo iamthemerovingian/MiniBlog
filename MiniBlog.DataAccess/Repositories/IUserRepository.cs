@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiniBlog.DataAccess.Repositories
 {
-    public class UserRepository : IUserRepository
+    public interface IUserRepository
     {
     }
 }

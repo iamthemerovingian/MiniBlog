@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MiniBlog.Business.Services
 {
-    public class UserManagementService : IUserManagementService
+    public interface IUserManagementService
     {
-        public string RegisterUser()
-        {
-            return "sampleToken";
-        }
+        string RegisterUser();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiniBlog.Business.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,8 +8,15 @@ using System.Web.Http;
 
 namespace MiniBlog.Controllers
 {
+    [RoutePrefix("ValuesAttribute")]
     public class ValuesController : ApiController
     {
+        private readonly IUserManagementService _userManagementService;
+
+        public ValuesController(IUserManagementService userManagementService)
+        {
+            _userManagementService = userManagementService;
+        }
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -34,6 +42,14 @@ namespace MiniBlog.Controllers
         // DELETE api/values/5
         public void Delete(int id)
         {
+        }
+
+        [Route("TestingNinject")]
+        public IHttpActionResult TestingNinject()
+        {
+           string userToken = _userManagementService.RegisterUser();
+
+            return Ok();
         }
     }
 }
