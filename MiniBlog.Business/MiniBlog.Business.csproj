@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CardManagementService.cs" />
+    <Compile Include="Services\ICardManagementService.cs" />
     <Compile Include="Services\IUserManagementService.cs" />
     <Compile Include="Services\UserManagementService.cs" />
   </ItemGroup>

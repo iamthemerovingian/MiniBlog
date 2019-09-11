@@ -66,6 +66,9 @@ namespace MiniBlog.App_Start
         {
             kernel.Bind<IUserManagementService>().To<UserManagementService>();
             kernel.Bind<IUserRepository>().To<UserRepository>();
+
+            kernel.Bind<ICardManagementService>().To<CardManagementService>();
+
         }
     }
 }

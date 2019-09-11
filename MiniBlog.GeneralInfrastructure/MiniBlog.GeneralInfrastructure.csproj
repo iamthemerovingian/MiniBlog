@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Extenstions\StringExtensions.cs" />
     <Compile Include="Models\DomainModels\UserDomainModel.cs" />
+    <Compile Include="Models\RequestModels\CreateCardRequestModel.cs" />
     <Compile Include="Models\RequestModels\RegisterUserRequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
